@@ -1,0 +1,53 @@
+<template>
+    
+  
+        <div class="slds-p-around_medium " >
+            <lightning-input type="search"
+            onchange={recordshandler}
+            label="Search Products"
+            value={searchkey}></lightning-input>
+        </div>
+        <lightning-card title="Products Available" icon-name="standard:account"></lightning-card>
+                
+                    <div class="slds-p-around_large wrapper">
+                       
+        
+                            
+                                       
+                                <div class="content">
+                                    
+    
+                            <template for:each={wiredproducts.data} for:item="product">
+                                
+                                <div key={product.Id}>
+                                    <div>
+                                    <lightning-card>
+                                     <img src={product.Image_link__c} class="slds-align_absolute-center productImage"
+                                     alt="Car picture"/>
+                                    
+                                         <p class="title slds-align_absolute-center"><b>{product.Name}</b></p>
+                                         <p class="slds-align_absolute-center">
+                                            <b>Price :&nbsp;</b> 
+                                             <b><lightning-formatted-number format-style="currency"
+                                                           currency-code="INR" value ={product.price__c} class="price"
+                                                           maximum-fraction-digits="0"></lightning-formatted-number></b>
+                                         </p>
+                                        </lightning-card>
+                                     </div>
+                                    </div>
+            
+                                
+                        
+                             
+                        </template>
+                        
+                   
+                    
+                   
+                    </div>
+                    </div>
+                
+               
+   
+                
+</template>

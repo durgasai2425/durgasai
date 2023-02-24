@@ -1,0 +1,59 @@
+<template>
+    <div>
+        <lightning-card icon-name="standard:account" footer="copyRights Reserved by salesforce">
+        <div slot="title">
+            Account<br/>
+            <b>Edige Communication</b>
+        </div>
+        <div slot="actions">
+            <lightning-button label="follow" icon-name="utility:add"></lightning-button> &nbsp;&nbsp;
+            <lightning-button-group>
+              <lightning-button label="New Contact" variant="neutral"></lightning-button>
+              <lightning-button label="New Case" variant="neutral"></lightning-button>
+              <lightning-button label="New Note" variant="neutral"></lightning-button>
+              <lightning-button-menu alternative-text="Select the Menu item">
+                 <lightning-menu-item label="New Opportunity" value="oppty"></lightning-menu-item>
+                 <lightning-menu-item label="Chenge Owner" value="Chenge Owner"></lightning-menu-item>
+                 <lightning-menu-item label="Edit" value="Edit"></lightning-menu-item>
+                 <lightning-menu-item label="Delete" value="Delete"></lightning-menu-item>
+                 <lightning-menu-item label="Sharing" value="Sharing"></lightning-menu-item>
+                 <lightning-menu-item label="Submit for APProval" value="Approval"></lightning-menu-item>
+              </lightning-button-menu>
+             </lightning-button-group>
+        </div>
+        <div slot="footor">
+            <lightning-badge label="New Customer"></lightning-badge>
+            <lightning-badge label="Account"></lightning-badge>
+            <lightning-badge label="Primiuam Customer "></lightning-badge>
+        </div>
+
+        <div>
+        <table>
+           <tr>   
+            <th> Account Name</th>
+            <th> Rating</th>
+            <th>Industry Name</th>
+            <th> Annual Revenue</th>
+            <th>Phone Number</th>
+            <th>Fax Number</th>
+            <th>Billing City</th>
+            <th> Billing Country</th>
+            <th>Customer Priority</th>
+            <th> Acitve Status</th>
+            </tr>
+            <tr>
+              <td>Sai Kandula</td>
+              <td>Hot</td>
+              <td>Manufacturing</td>
+              <td>20.00.000</td>
+              <td>91+8185858511</td>
+              <td>Guntur</td>
+              <td>India</td>
+              <td>High</td>
+              <td>yes</td>
+              </tr> 
+        </table>
+         </div>
+       </lightning-card>
+    </div>
+</template>

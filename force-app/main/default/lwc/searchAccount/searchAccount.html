@@ -1,0 +1,10 @@
+<template>
+    
+    <lightning-card>
+    <template for:each={lstAccounts} for:item="accountobj" >      
+    <lightning-card key={accountobj.Id} >  
+       <P>{accountobj.Name}</P>  
+        </lightning-card>
+    </template>
+</lightning-card>
+</template>

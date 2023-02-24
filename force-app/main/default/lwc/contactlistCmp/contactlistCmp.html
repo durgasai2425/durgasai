@@ -1,0 +1,8 @@
+<template>
+    <template for:each={contacts} for:item = "Contact">
+        <lightning-card key={Contact.Id} icon-name="standard:Contact">
+            <p>{Contact.MobilePhone}</p>
+            <p>{Contact.Name}</p>
+         </lightning-card>
+    </template>
+</template>

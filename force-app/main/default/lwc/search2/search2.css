@@ -1,0 +1,13 @@
+img.productImage{
+    width: 150px;
+    height: 150px;
+}
+.content{
+    display:flex;
+    flex-wrap: wrap;
+}
+.wrapper{
+    background-color: #e3e5e4;
+    min-width: 200px;
+    flex:1
+}
